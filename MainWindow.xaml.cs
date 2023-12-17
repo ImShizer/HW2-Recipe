@@ -31,14 +31,12 @@ namespace CookbookRecipes
                     },
                     Description = "Варите все ингредиенты вместе. Приятного аппетита!"
                 },
-                // Добавьте другие рецепты по аналогии
             };
 
             recipeListBox.ItemsSource = recipes;
 
             recipeListBox.SelectionChanged += RecipeListBox_SelectionChanged;
 
-            // Вызываем обработчик для отображения информации о первом рецепте при запуске приложения
             RecipeListBox_SelectionChanged(null, null);
         }
 
